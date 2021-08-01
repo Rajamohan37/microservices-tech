@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: 'First App'
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/RJUSRDB01
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    
+
+base-package:
+  com.myworld.user.mgmt
+application:
+  name: '@project.name@'
+  groupid: '@project.groupId@'
+  version: '@project.version@'
+  description: '@project.description@'
