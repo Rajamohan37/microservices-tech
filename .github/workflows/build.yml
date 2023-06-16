@@ -35,4 +35,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Rajamohan37_microservices-tech_AYjCDeyVjeebsU8mp70Q -Dsonar.projectName='microservices-tech'
+        run: mvn -B verify --file user-mgmt-svc/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Rajamohan37_microservices-tech_AYjCDeyVjeebsU8mp70Q -Dsonar.projectName='microservices-tech'
